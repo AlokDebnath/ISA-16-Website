@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ISA-16</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      width: 100%;
+      z-index: +1;
+      padding-right: 15px;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 2730px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+      text-align: left;
+      padding-bottom: 20px;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #0d1e1e;
+      color: white;
+      padding: 15px;
+    }
+    
+    .bg-1 { 
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding-top: 80px;
+  }
+  	.carousel-inner {
+  		background-color: #3e3e3e;
+  		color: white;
+  		padding: 30px;
+  		padding-top: 10px;
+  		width: 100%;
+  		height: 650px;
+  	}
+
+  	.important {
+  		background-color: red;
+  		padding: 40px;
+  		color: white;
+  	}
+    
+    /*On small screens, set height to 'auto' for sidenav and grid*/
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">ISA-16</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#1">Home</a></li>
+        <li><a href="#2">Accepted Papers</a></li>
+        <li><a href="#3">Call for Papers</a></li>
+        <li><a href="#4">Submission Information</a></li>
+        <li><a href="#5">Important Dates</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://lrec2020.lrec-conf.org/en/">LREC 2020</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container-fluid-1 bg-1 text-center">
+  <h1 class="margin"><b>ISA-16</b></h1>
+  <h2>The Sixteenth Joint ACL - ISO Workshop on Interoperable Semantic Annotation</h2>
+  <h4>Full Day Workshop @ LREC 2020 | Marseille, France | <s>Tuesday 12 May, 2020</s></h4>
+      <div class='important'>
+    	<b>CANCELLED: As the LREC 2020 conference has been cancelled, due to the Covid-19 outbreak, so has the ISA-16 workshop. The workshop proceedings will however be published according to the original schedule. </b>
+    </div>
+</div>
+
+<div class="container-fluid">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h4>Previous ISA Workshops</h4>
+      <p><a href="https://sigsem.uvt.nl/isa15/">ISA-15</a></p>
+      <ul>
+      	<li><a href="https://sigsem.uvt.nl/isa15/ISA-15_program.rtf">Program</a></li>
+        <li><a href="https://sigsem.uvt.nl/isa15/ISA-15_proceedings.pdf">Proceedings</a></li>
+      </ul>
+      <p><a href="https://sigsem.uvt.nl/isa14/">ISA-14</a></p>
+      <ul>
+      	<li><a href="https://sigsem.uvt.nl/isa15/ISA-14_program.rtf">Program</a></li>
+        <li><a href="https://sigsem.uvt.nl/isa15/ISA-14_proceedings.pdf">Proceedings</a></li>
+      </ul>
+      <p><a href="https://sigsem.uvt.nl/isa13/">ISA-13</a></p>
+      <ul>
+      	<li><a href="https://sigsem.uvt.nl/isa15/ISA-13_program.rtf">Program</a></li>
+        <li><a href="https://sigsem.uvt.nl/isa15/ISA-13_proceedings.pdf">Proceedings</a></li>
+      </ul>
+      <p><a href="https://sigsem.uvt.nl/isa12/">ISA-12</a></p>
+      <p><a href="https://sigsem.uvt.nl/isa11/">ISA-11</a></p>
+      <p><a href="https://sigsem.uvt.nl/isa10/">ISA-10</a></p>
+      <p><a href="https://sigsem.uvt.nl/isa9/">ISA-9</a></p>
+      <p><a href="https://sigsem.uvt.nl/isa8/">ISA-8</a></p>
+    </div>
+    
+	<div class="col-sm-8">
+    
+	<div id='1'>
+      <h1>Welcome</h1>
+      <p> Welcome to <b>ISA-16</b>, the Sixteenth Workshop on Interoperable Semantic Annotation, is the most recent edition of a series of joint workshops of the <i>ACL Special Interest Group on Computational Semantics (SIGSEM)</i> and <i>ISO TC 37/SC 4 (Language Resources) WG 2: Semantic annotation</i>.</p>
+
+	  <p>These workshops bring together experts in the annotation of semantic information as expressed in text, speech, gestures, graphics, video, images, and in multiple modalities combined. Examples of semantic annotation include the markup of events, time, space, dialogue acts, discourse relations, semantic roles, reference relations, and quantification for which the ISO organization pursues the establishment of annotation standards, in order to support the creation of interoperable semantic resources. </p>
+    </div>
+
+    <hr />
+
+    <div id='2'>
+    	<h2>Accepted Papers</h2>
+      	<table class="table table-hover">
+      	<tbody>
+      		<tr>
+	      		<td>Harry Bunt</td>
+	      		<td><i>Annotation of Quantification: The Current State of ISO 24617-12</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Pranav Goel, Suhan Prabhu, Alok Debnath, Priyank Modi and Manish Shrivastava</td>
+	      		<td><i>Hindi TimeBank: An ISO-TimeML Annotated Reference Corpus</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Lars Hellan</td>
+	      		<td><i>Interoperable Semantic Annotation</i><td>
+	      	</tr>
+	      	<tr>
+	      		<td>Alexander Henlein, Giuseppe Abrami, Attila Kett and Alexander Mehler</td>
+	      		<td><i>Transfer of ISOSpace into a 3D Environment for Annotations and Applications</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Kiyong Lee</td>
+	      		<td><i>Shallow Semantics for the Interpretation of Annotation Structures Carrying Spatio-temporal Information in Language</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Constanza Marini and Elisabetta Jezek</td>
+	      		<td><i>Annotating Croatian Semantic Type Coercions in CROATPAS</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Johanna Melly, Gabriel Luthier and Andrei Popescu-Belis</td>
+	      		<td><i>A Consolidated Dataset for Knowledge-based Question Generation using Predicate Mapping of Linked Data</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Volha Petukhova and Harry Bunt</td>
+	      		<td><i>Adapting the ISO 24617-2 Dialogue Act Annotation Scheme for Modelling Medical Consultations</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Suhan Prabhu, Ujwal Narayan, Alok Debnath, Sumukh S and Manish Shrivastava</td>
+	      		<td><i>Detection and Annotation of Events in Kannada</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>John Roberto and Brian Davies</td>
+	      		<td><i>Towards the Ontologization of the Outsider Art Domain: Position Paper</i></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Svetlana Sheremetyeva</td>
+	      		<td><i>Towards Creating Interoperable Resources for Conceptual Annotation of Multilingual Domain Corpora</i></td>
+	      	</tr>
+      		</tbody>
+      	</table>
+    </div>
+    <hr />
+    <div id='3'>
+     	<h2>Call For Papers</h2>
+     	<p>Besides a main track, ISA-16 will feature two specialised tracks, focused on: </p>
+     	<ol>
+     		<li>the annotation of quantification (and quantified modification) in natural language, and </li>
+     		<li>the design and representation of data structures for generating visualisations of linguistically represented objects, properties, and events. </li>
+     	</ol>
+     	<p>These topics relate to a recently started project on developing an ISO annotation standard for quantification (ISO/WD 24617-12, 'QuantML'), and a proposal for developing an ISO standard for the representation of visual information ('VoxML'), respectively.</p>
+
+		<p>Both specialised tracks consist of a pre-conference on-line portion and an on-site portion during the ISA-16 workshop on Tuesday, May 12. For the pre-conference on-line portion participants are invited to submit their commented annotations and representations for a batch of example items that are provided with documentation and guidelines of the envisaged annotation and representation schemes.</p> 
+    </div>
+	  <h3>Topics by Track</h4>  
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+	
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner">
+	      <div class="item active">
+	      	<h4>Main Track</h4>
+	      	<p>The general topics of the two tracks (quantification and vizualization) are also topics for submissions to the main track of the workshop, which furthermore include, but are not limited to:</p>
+	      	<ul>
+	      		<li> methodological aspects of semantic annotation </li>
+	      		<li> experiments in semantic annotation </li>
+	      		<li> context in semantic annotation </li>
+	      		<li> applications of semantic annotation </li>
+	      		<li> generating scenes from annotated text </li>
+	      		<li> events and participants in annotation and visualisation </li>
+	      		<li> uncertainty and ambiguity in annotations </li>
+	      		<li> combining annotations from different schemes </li>
+	      		<li> semantic annotation, interpretation, and inference </li>
+	      		<li> granularity in annotation schemes </li>
+	      		<li> evaluation and comparison of semantic annotations </li> 
+	      		<li> semantic annotation in specialised domains </li>
+	      		<li> issues in the modelling of semantic information in specific areas, such as: </li>
+	      		  <ul>
+	      		   <li> events, states, processes, circumstances, facts </li>
+	      		   <li> space, motion events and 3D objects as participants </li>
+	      		   <li> modality, factuality, polarity and negation </li>
+	      		   <li> quantification and modification </li>
+	      		   <li> relations in discourse and dialogue </li>
+	      		   <li> referential relations </li>
+	      		   <li> attribution, sentiment, attitudes, and emotions </li>
+	      		  </ul>
+	      	</ul>
+	      </div>
+	
+	      <div class="item">
+	        <h4>Quantification Track</h4>
+	        <p>
+	          Issues in the annotation of aspects and forms of quantification in natural language will be discussed, with the aim to establish a good basis for developing an interoperable annotation scheme that would ideally fit into the ISO Semantic Annotation Framework (ISO 24617). 
+	          The document <a href="TiCC_Report_Quantification-8-Print.pdf"><i><b>Semantic Annotation of Quantification in Natural Language</b></i></a>
+	          (TiCC Technical Report 2020-2) describes the current state of developing such an annotation scheme, including the markup language <b>QuantML</b>. Previous publications from preliminary studies are:
+	        </p>
+	          <ul>
+	          	<li>Bunt, Harry, James Pustejovsky, and Kiyong Lee. <i><a href="https://let.uvt.nl/general/people/bunt/docs/Bunt-Quantification.pdf">"Towards an ISO Standard for the Annotation of Quantification."</a> Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018).</i> 2018.</li>
+
+	          	<li>Bunt, Harry. <i><a href="https://let.uvt.nl/general/people/bunt/docs/Quant-IWCS2019-final.pdf">"An Annotation Scheme for Quantification."</a>Proceedings of the Thirteenth International Conference on Computational Semantics (IWCS 2019).</i></li>
+	          </ul>
+	        <p>
+	          In the pre-conference, on-line part, track participants are invited to test, comment on, ciriticise, praise, compare, improve, the annotations that can be made with the current version of the QuantML scheme, making use of the short list of test sentences made available <a href="https://sigsem.uvt.nl/isa16/Q-sentences.rtf"><i>here</i></a>, and consider how to annotate them. The aim is to identify strenghts and weaknesses of the current scheme, to signal problematic issues, and to make comparisons to recent representations of quantification and scope. Note any specific issues that emerge in the annotation process and in comparisons, that would be good to be discussed in the on-site part of the workshop. Questions to consider include at least the following:
+	      	</p>
+	        <ul>
+	        	<li> Can you annotate the sentence in a satisfactory manner using the QuantML annotation scheme? What problems do you encounter in trying to do so? </li>
+	            <li> Do you think the sentence should rather be annotated in a different way? How? Why? </li>
+	            <li> How does the annotation compare to other recent representations for quantification and scope for instance in the Groningen MeaningBank or in efforts to represent quantifier scope with AMR annotation? </li>
+	            <li> Are the current annotation guidelines adequate for indicating how to deal with this sentence? How could they be improved? </li>
+	            <li> What implications do you see from this example for the design of an annotation tool for quantification? </li>
+	        </ul>
+	        <p>
+	          Please send your commented annotations and observations and any other relevant considerations that occur to you (in any readable form) to the track coordinator Harry Bunt (<a href="mailto:harry.bunt@uvt.nl">harry.bunt@uvt.nl</a>) please <b>before March 20</b>. We will take it interactively from there in preparation of the on-site part of the workshop.
+	        </p>
+	      </div>
+	    
+	      <div class="item">
+	        <h4>Visualization/VoxML Track</h4>
+	        <p>
+	          For the pre-conference on-line work, we supply a batch of images of objects and people participating in activities and events follow this link to the  <a href="http://www.voxicon.net/ISA-2020">homepage for the VoxML/Voxicon simulation and reasoning platform</a>. Here you find a collection of images to be annotated, using a vocabulary of objects, attributes, actions, and relations. Annotators are asked to use these to create an annotation of the image, as exhaustively as possible. Accompanying the collection of images you also find guidelines for how annotation should be performed, using an annotation template, and submitted. For any questions please contact the track coordinator James Pustejovsky (jamesp@brandeis.edu).
+	      	</p>
+	        <p>
+	          Background document: the LREC 2016 paper <a href="https://sigsem.uvt.nl/isa16/Pustejovsky-Krishnaswamy-LREC2016.pdf"><i><b>VoxML: A Visualization Modeling  Language</b></i></a> by James Pustejovsky and Nikhil Krishnaswamy.
+	        </p>
+	        <p>
+	        For both tracks, annotators should attempt to follow the guidelines and stay within the provided vocabulary where possible, but are permitted to go outside if required. In this case, we ask that they submit a brief summary of and justification for their additions.
+	    	</p>
+	        <p>
+	        We will provide feedback on submitted annotations. <b>Deadline for submissions is March 20</b>. We will select certain annotation submissions for spotlight presentations. These are to be given during the on-site portion of the workshop and will focus on the results of the annotation exercise. This will be followed by a discussion of the entire annotation effort, lessons learned (problems, gaps, suitability of results for ML, automated generation, etc), and the adequacy and expressiveness of the representation language.
+	        </p>
+	      </div>
+	    </div>
+	
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	<hr />
+	<div id='4'>
+		<h1>Submission Information</h1>
+		<table class="table">
+			<tr>
+				<td>Submission Link</td>
+				<td><a href="https://www.softconf.com/lrec2020/ISA16?">The ISA-16 submission site</a></td>
+			</tr>
+			<tr>
+				<td>Submission Format</td>
+				<td>A PDF formatted based on the <a href="https://lrec2020.lrec-conf.org/en/submission2020/authors-kit/">LREC Author's Kit</a></td>
+			</tr>
+		</table>
+		
+		<h4> Types of Submission </h4>
+		Three types of submission are invited:
+		<ul>
+			<li> Research papers, describing original research in the area of semantic annotation; these can be either long (6-8 pages, with additional pages for references references) or short (3-5 pages, plus references); </li>
+			<li> Project notes, describing recent, ongoing or planned projects involving semantic annotation (2-4 pages including references); </li>
+			<li> Commented annotations/representations for the specialised tracks.  </li>
+		</ul>
+
+		<h4> About the LRE Map and ISLRN Numbers</h4>
+		<ul>
+			<li>Describing your LRs in the LRE Map is now a normal practice in the submission procedure of LREC (introduced in 2010 and adopted by other conferences). To continue the efforts initiated at LREC 2014 about “Sharing LRs” (data, tools, web-services, etc.), authors will have the possibility,  when submitting a paper, to upload LRs in a special LREC repository.  This effort of sharing LRs, linked to the LRE Map for their description, may become a new “regular” feature for conferences in our field, thus contributing to creating a common repository where everyone can deposit and share data.</li>
+
+			<li>As scientific work requires accurate citations of referenced work so as to allow the community to understand the whole context and also replicate the experiments conducted by other researchers, LREC 2020 endorses the need to uniquely identify LRs through the use of the International Standard Language Resource Number (ISLRN, www.islrn.org), a Persistent Unique Identifier to be assigned to each Language Resource. The assignment of ISLRNs to LRs cited in LREC papers  will be offered at submission time.</li>
+		</ul>
+
+		<h4>Venue</h4>
+		<p>The ISA-16 workshop is hosted by the LREC 2020 conference and is held at the conference center <a href="http://palaisdupharo.marseille.fr/">Le Palais du Pharo</a> in Marseille.</p>
+
+	</div>
+	<hr />
+	<div id='5'>
+		<h3>Important Dates</h3>
+		<table class="table">
+			<tbody>
+				<tr>
+					<td>1st March, 2020</td>
+					<td>Deadline for submitting papers</td>
+				</tr>
+				<tr>
+					<td>18th March, 2020</td>
+					<td>Notification of Acceptance</td>
+				</tr>
+				<tr>
+					<td>20th March, 2020</td>
+					<td>Submission of commented annotations for Quantification or Visualization track</td>
+				</tr>
+				<tr class="active">
+					<td>1st April, 2020</td>
+					<td>Submission of Camera Ready Papers</td>
+				</tr>
+				<tr class="danger">
+					<td>12th May, 2020</td>
+					<td><s>ISA-16 Workshop</s> <b>Cancelled</b></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	</div>
+    <div class="col-sm-2 sidenav">
+      <h4>Organizing Committee</h4>
+      <ul>
+      	<li> <b>Harry Bunt</b> (Chair) </li>
+        <li> Nancy Ide </li>
+		<li> Kiyong Lee </li>
+		<li> Volha Petukhova </li>
+		<li> James Pustejovsky </li>
+		<li> Laurent Romary </li>
+      </ul>
+      <h4>Program Committee</h4>
+      <ul>
+		<li> Lasha Abzianidze </li>
+		<li> Jan Alexandersson </li>
+		<li> James Allen </li>
+		<li> Ron Artstein </li>
+		<li> Johan Bos </li>
+		<li> <b>Harry Bunt</b> (Chair) </li>
+		<li> Nicoletta Calzolari </li>
+		<li> Jae-Woong Choe </li>
+		<li> Robin Cooper </li>
+		<li> David DeVault </li>
+		<li> Simon Dobnik </li>
+		<li> Jens Edlund </li>
+		<li> Alex Fang </li>
+		<li> Robert Gaizauskas </li>
+		<li> Kallirroi Georgila </li>
+		<li> Jan Hajic </li>
+		<li> Koiti Hasida </li>
+		<li> Nancy Ide </li>
+		<li> Elisabetta Jezek </li>
+		<li> Nikhil Krishnaswamy </li>
+		<li> Kiyong Lee </li>
+		<li> Paul Mc Kevitt </li>
+		<li> Adam Meyers </li>
+		<li> Roser Morante </li>
+		<li> Philippe Muller </li>
+		<li> Rainer Osswald </li>
+		<li> Volha Petukhova </li>
+		<li> Massimo Poesio </li>
+		<li> Eric Postma </li>
+		<li> Laurent Prevot </li>
+		<li> James Pustejovsky </li>
+		<li> Livio Robaldo </li>
+		<li> Laurent Romary </li>
+		<li> Ielka van der Sluis </li>
+		<li> Manfred Stede </li>
+		<li> Matthew Stone </li>
+		<li> Thora Tenbrink </li>
+		<li> Sara Tonelli </li>
+		<li> Thorsten Trippel </li>
+		<li> Carl Vogel </li>
+		<li> Menno van Zaanen </li>
+		<li> Annie Zaenen </li>
+		<li> Heike Zinsmeister </li>
+	</ul>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>For any questions contact the workshop chair, <a href="mailto:harry.bunt@uvt.nl">harry.bunt@uvt.nl</p>
+</footer>
+
+</body>
+</html>
